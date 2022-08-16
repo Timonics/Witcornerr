@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+  <div class="container">
+      <div class="col-md-12">
+       <form method="POST" class="row g-1" style="color:white">
+        {{ form.hidden_tag() }}
+        {{ form.username.label() }}
+        {{ form.username(class="form-control", placeholder="Username") }}
+
+
+        {{ form.email_address.label() }}
+        {{ form.email_address(class="form-control", placeholder="Email address") }}
+
+        {{ form.password1.label() }}
+        {{ form.password1(class="form-control", placeholder="Password") }}
+
+        {{ form.password2.label() }}
+        {{ form.password2(class="form-control", placeholder="Confirm password") }}
+
+        <br>
+        {{ form.submit(class="btn btn-lg btn-primary") }}
+      </form>
+  </div>
+ </div>
+</body>
+{% endblock %}

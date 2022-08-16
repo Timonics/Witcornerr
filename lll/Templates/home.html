@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content%}
+<div class="hero">
+  <nav>
+    <h2 class="logo">Wit<span>corner</span></h2>
+    <ul>
+      <li><a href="{{ url_for('register_page')}}">Register</a></li>
+      <li><a href="{{ url_for('login_page')}}">Login</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <a href="#" class="btn">Subscribe</a>
+  </nav>
+
+  <div class="content">
+      <h4>Hello there, you welcome</h4>
+      <h1>Witcorner</h1>
+      <h3>get a corner just for yourself</h3>
+      <div class="newsletter">
+          <form>
+              <input type="email" name="email" id="mail" placeholder="Enter Your Mail">
+              <input type="submit" name="submit" value="Let Get Started">
+          </form>
+      </div>
+  </div>
+ </div>
+
+ <section class="about">
+     <div class="main">
+         <img src="(../../static/logo.jpg)">
+         <div class="about-text">
+             <h2>About Us</h2>
+             <h5>Our<span>Features</span></h5>
+             <p>We aim to change your perspective of online spaces, to bring you more comfort and every other goodies!!</p>
+             <button type="button">Lets Start</button>
+         </div>
+     </div>
+ </section>
+
+ <div class="service">
+     <div class="title">
+         <h2>Our Service</h2>
+     </div>
+
+     <div class="box">
+         <div class="card">
+             <i class="fas fa-bars"></i>
+             <h5>Clubs</h5>
+             <div class="pra">
+                 <p>Create reading groups, usually consisting of a number of people and talk about books based on a topic or an agreed upon reading list.</p>
+                 <p style="text-align: center;">
+                     <a class="button" href="#">Read More</a>
+                 </p>
+             </div>
+         </div>
+
+          <div class="card">
+             <i class="fas fa-bars"></i>
+             <h5>Sales</h5>
+             <div class="pra">
+                 <p>Create and distribute valuables, relevant and consistent content to attract and retain a clearly defined audience.</p>
+                 <p style="text-align: center;">
+                     <a class="button" href="#">Read More</a>
+                 </p>
+             </div>
+         </div>
+
+          <div class="card">
+             <i class="fas fa-bars"></i>
+             <h5>Analytics</h5>
+             <div class="pra">
+                 <p>Discover, interpret and communicate significant patterns in data. See insightful data that helps you grow.</p>
+
+                 <p style="text-align: center;">
+                     <a class="button" href="#">Read More</a>
+                 </p>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <div class="contact-me">
+     <p>..................</p>
+     <a class="button-two" href="#">.......</a>
+ </div>
+
+ <footer>
+     <p>...........</p>
+     <p>..............................................</p>
+     <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+     </div>
+   <p class="end">Copyright by Mick</p>
+ </footer>
+
+{% endblock %}
